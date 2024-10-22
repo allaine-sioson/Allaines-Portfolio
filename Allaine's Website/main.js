@@ -32,11 +32,6 @@ document.body.onpointermove = event => {
 	});
 }
 
-function keepOnScreen() {
-    right.style.opacity = 1;
-    right.style.scale = 1;
-}
-
 function displayProfile() {
     text1.style.fontFamily = "headerFont";
     text1.style.fontSize = "200%"
@@ -83,7 +78,7 @@ function displayProjects() {
     text1.style.textShadow = "2px 2px 5px rgb(192, 148, 5)";
     text1.style.marginTop = "10%";
 
-    text1.innerHTML = "Andy sucks at spelling :)";
+    text1.innerHTML = "Placeholder Text :D";
     text2.innerHTML = "";
 
     java.src= "";
@@ -98,8 +93,4 @@ profile.addEventListener("mouseover", displayProfile);
 experiences.addEventListener("mouseover", displayexperiences);
 projects.addEventListener("mouseover", displayProjects);
 credits.addEventListener("mouseover", displayCredits);
-
-profile.addEventListener("click", keepOnScreen);
-experiences.addEventListener("click", keepOnScreen);
-projects.addEventListener("click", keepOnScreen);
 
